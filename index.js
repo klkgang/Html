@@ -9,6 +9,7 @@ function validarUsuario() {
     errorMessage.style.display = 'none';
     // Aquí puedes enviar el nombre de usuario al servidor para su verificación
     // Por ejemplo: enviarUsuarioAlServidor(usuario);
+    const valid = true;  
     console.log('Nombre de usuario válido:', usuario);
   }
 }
