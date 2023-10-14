@@ -2,27 +2,28 @@
 <html>
 
 <head>
-  <meta = name="viewpoint" content="witdh=device-with, initial-scale=1.0">
-  <title>Hola mundo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="index.css">
-
+  <title>Hola mundo</title>
 </head>
 
 <body>
-  <h1> Bienvenido </h1>
+  <h1>Bienvenido</h1>
+  <p>Ingresa tu usuario</p>
 
-  <p> Ingresa tu usuario </p>
-  
-  <div class="conteiner">
-    <input type="text" class="custum-input" placeholder="Escribe aqui">
+  <div class="container">
+    <input type="text" id="usuario" class="custom-input" placeholder="Escribe Aqui">
   </div>
-  
+
   <button onclick="validarUsuario()">Continuar</button>
-  
-  <p id="error-msg" style="color: red; display: none;
-  ">El nombre no debe contener espacios.</p>
+
+  <p id="error-msg" style="color: red; display: none;">El nombre no debe contener espacios.</p>
 
   <script src="index.js"></script>
+
+  <script>
+    detectarPlataforma();
+  </script>
 </body>
 
 </html>
