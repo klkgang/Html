@@ -14,3 +14,17 @@ function validarUsuario() {
   }
 }
 
+function detectarPlataforma(){
+  //variable para verificar el tamallo de la ventana de el navegador
+  const anchoVentana = window.innerWidth;
+ // variable para verificar el  navegador de el usaurio  
+  const agenteUsuario = navigator.userAgent;
+
+  if (anchoVentana > 768){
+    alert("Parece que estas en una computadora")
+  } else {
+    alert("Parece que estas en un dispositivoi movil")
+  }
+}
+
+

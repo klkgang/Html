@@ -1,11 +1,36 @@
 body {
-  background-color: yellow;
+  background-color: rgb(0, 71, 27);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+
+  
 }
 
-h1 {
-  color: blue;
+.conteiner {
+  width: 300px; /*ancho de el contenedor*/
 }
 
-p{
- color: #829;
+.custum-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5PX;
+  background-color: white;
+  color: #2ecc71;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.custum-input::placeholder{
+  color: #2ecc71;
+}
+
+.custum-input:focus{
+  outline: none;
+  box-shadow: 0 0 5px rgba(46, 204, 133, 0.8);
 }

@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta = name="viewpoint" content="witdh=device-with, initial-scale=1.0">
   <title>Hola mundo</title>
   <link rel="stylesheet" type="text/css" href="index.css">
 
@@ -11,13 +12,13 @@
   <h1> Bienvenido </h1>
 
   <p> Ingresa tu usuario </p>
-
-  <label for="usuario">AQUI:</Label>
-
-  <input type="text" id="usuario" name="usuario">
-
-  <button onclick="validarUsuario()">Enviar</button>
-
+  
+  <div class="conteiner">
+    <input type="text" class="custum-input" placeholder="Escribe aqui">
+  </div>
+  
+  <button onclick="validarUsuario()">Continuar</button>
+  
   <p id="error-msg" style="color: red; display: none;
   ">El nombre no debe contener espacios.</p>
 
