@@ -1,44 +1,225 @@
+/* meadia query for cumputers */
+@media (min-width: 767px) {
+
 body {
-  background-color: #2ecc50;
-  display: flex;
-  flex-direction: column; /* Alinea los elementos en columna */
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+    background-color: #F8F8FF;
+}
+    
+    
+/* conteiner configuartion */
+.conteiner {
+    border-radius: 5px;
+    border: 10px solid #ccc;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 100px;
+}
+/* main text */
+h1 {
+    font-size: 50px;
+}
+/* secondary text */
+h3 {
+    margin-top: -20px;
 }
 
-.container {
-  justify-content: center; 
-  width: 50%; /* Cambiado a ancho completo */
-  margin-bottom: 20px;
+/* paragraph */
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 1px;
 }
 
-.custom-input {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: white;
-  color: black;
-  font-size: 16px;
-  box-sizing: border-box;
-  
+/* input */
+input {
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+    
+#login {
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #ccc;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); /* add a shadow effect */
+    transition: box-shadow 0.2s ease-in-out; /* add a transition effect */
+}
+    
+/* apply the :active pseudo-class to the login button */
+#login:active {
+    box-shadow: none; /* remove the shadow effect */
+    transform: translateY(2px); /* add a translation effect */
+}
+        
+/* register button */
+#register {
+    width: 100px;
+    height: 30px;
+     margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #ccc;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); /* add a shadow effect */
+    transition: box-shadow 0.2s ease-in-out; /* add a transition effect */
+}
+    
+/* apply the :active pseudo-class to the register button */
+#register:active {
+     box-shadow: none; /* remove the shadow effect */
+    transform: translateY(2px); /* add a translation effect */
+}
+    
+#text_1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    justify-content: left;
+    margin-top: -500px;
+    margin-left: 120px;
+    margin-bottom: 150px;
+    font-size: 25px;
+     
+}
+    
+#text_2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-left: 120px;
+    margin-bottom: 150px;
+    font-size: 25px;
 }
 
-button {
-  width: 50%; /* Ancho completo para el botón */
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: black;
-  color: white;
-  font-size: 16px;
-  box-sizing: border-box;
+#text_3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-left: 120px;
+    font-size: 25px;
 }
 
-button:hover {
-  background-color: #27ae60; /* Cambio de color al pasar el ratón */
 }
+
+/* styles for phones */
+@media (max-width: 767px) {
+
+    body{
+    background-color: #F8F8FF;
+}
+
+/* conteiner configuartion */
+.conteiner {
+   border-radius: 5px;
+   border: 10px solid #ccc;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+/* main text */
+h1 {
+   font-size: 50px;
+}
+/* secondary text */
+h3 {
+   margin-top: -20px;
+   text-align: center;
+
+}
+
+/* paragraph */
+p{
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   margin-bottom: 1px;
+}
+
+/* input */
+input {
+   width: 250px;
+   height: 30px;
+   margin: 10px;
+   border-radius: 10px;
+   border: 1px solid #ccc;
+   padding: 5px;
+}
+   
+#login {
+   width: 100px;
+   height: 30px;
+   margin: 10px;
+   border-radius: 10px;
+   border: 1px solid #ccc;
+   padding: 5px;
+   background-color: #ccc;
+   color: #fff;
+   font-weight: bold;
+   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); /* add a shadow effect */
+   transition: box-shadow 0.2s ease-in-out; /* add a transition effect */
+}
+   
+/* apply the :active pseudo-class to the login button */
+#login:active {
+   box-shadow: none; /* remove the shadow effect */
+   transform: translateY(2px); /* add a translation effect */
+}
+       
+/* register button */
+#register {
+   width: 100px;
+   height: 30px;
+    margin: 10px;
+   border-radius: 10px;
+   border: 1px solid #ccc;
+   padding: 5px;
+   background-color: #ccc;
+   color: #fff;
+   font-weight: bold;
+   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); /* add a shadow effect */
+   transition: box-shadow 0.2s ease-in-out; /* add a transition effect */
+}
+   
+/* apply the :active pseudo-class to the register button */
+#register:active {
+    box-shadow: none; /* remove the shadow effect */
+   transform: translateY(2px); /* add a translation effect */
+}
+   
+#text_1 {
+    text-align: center;
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+    font-size: 20px;
+}
+   
+#text_2 {
+   font-family: Arial, Helvetica, sans-serif;
+   margin-left: 50px;
+   float: left;
+   font-size: 20px;
+}
+
+#text_3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    margin-top: 1px;
+    margin-right: 50px;
+    float: right;
+    font-size: 20px;
+    
+}
+
+
+}
+
 

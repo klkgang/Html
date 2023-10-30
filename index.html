@@ -2,25 +2,33 @@
 <html>
 
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="index.css">
-  <title>Hola mundo</title>
-  <link rel="icon" href="flor.jpg" type="image/x-icon">
+  <title>Login</title>
 </head>
 
 <body>
-  <h1>Bienvenido</h1>
-  <p>Ingresa tu usuario:</p>
-  <div class="container">
-    <input type="text" id="usuario" class="custom-input" placeholder="Escribe Aqui">
+  <div class = "conteiner">
+    <h1>Welcome </h1>
+    <h3>To Project KM A Modern And Aesthetic Agenda </h3>
+
+    <input id = "user" placeholder="Enter your username">
+
+    <input type="password" id = "pass" placeholder="Enter your password">
+  
+    <button id = "login">Login</button>
+
+    <p> Not accout yet? </p>
+    <button id = "register">Register</button>
   </div>
-  <button onclick="validarUsuario()">Continuar</button>
-  <p id="error-msg" style="color: red; display: none;">El nombre no debe contener espacios.</p>
-  <script src="index.js"></script>
-  <script>
-    validarUsuario();
-    <script>
 
-    </body>
+<div id = "text_1"></div>  
+<div id = "text_2"></div>
+<div id = "text_3"></div>
 
-</html >
+<script src = "index.js"></script>
+  
+</body>
+
+</html>
