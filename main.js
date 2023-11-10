@@ -1,24 +1,23 @@
 function checkTime() {
-    var date = new Date(); // Create a new Date object
+    var date = new Date(); 
     var hours = date.getHours();
     var cases = {
         1: "Good night",
         2: "Good morning",
         3: "Good afternoon",
     }
-    var messege = document.getElementById("welcome"); // Use document.getElementById
+    var messege = document.getElementById("welcome"); 
     if (hours < 12) {
         messege.innerHTML = cases[2];
-    } else if (hours > 12) {
+    } else if (hours >= 12 && hours < 18) {
         messege.innerHTML = cases[3];
-    } else if (hours < 18) {
-        messege.innerHTML = cases[3];
+    } else if (hours >= 18) {
+        messege.innerHTML = cases[1];
     }
 }
 
 
-
-var today = ["Clean the house", "Wash the dishes", "Do the laundry"];
+var today = ["Clean the house", "Wash the dishes", "Do the laundry",];
 var done = [];
 
 function printToDoList() {
@@ -45,6 +44,11 @@ function printToDoList() {
         ul.appendChild(li);
     }
 } 
+
+//function addingToDo() {
+
+//}
+
 
 printToDoList();
 checkTime();

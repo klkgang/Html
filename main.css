@@ -17,7 +17,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: var(--main-bg-color);
+    background: linear-gradient(90deg, #F0F8FF, #F0FFFF, #F0F8FF);
 }
 
 #main_menu {
@@ -73,6 +73,56 @@ html, body {
     text-shadow: 1px 1px 2px var(--text-shadow);
     padding: 20px;
 }
+
+@media screen and (max-width: 600px) {
+    #container {
+        display: flex !important;
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        margin:auto !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+    #container #today, #container #done {
+        width: 100% !important;
+        margin: 10px !important;
+    }
+}
+
+
+#add {
+    position: relative;
+    bottom: 85px;
+    border: none; /* remove border */
+    border-radius: 50%; /* make the button round */
+    margin-left: 90%;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;/* use main background color */
+    color: var(--menu-bg-color); /* use menu background color for text */
+    text-align: center;
+    font-size: 30px; /* adjust as needed */
+    line-height: 50px; /* vertically center the '+' sign */
+    box-shadow: var(--box-shadow), 0 0 10px var(--box-shadow); /* add 3D effect */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* smooth shadow and transform transition */
+}
+
+#add:before {
+    content: "+";
+}
+
+#add:hover {
+    box-shadow: var(--box-shadow), 0 0 15px var(--box-shadow); /* increase 3D effect on hover */
+}
+
+#add:active {
+    box-shadow: var(--box-shadow), 0 0 5px var(--box-shadow); /* decrease 3D effect when pressed */
+    transform: scale(0.95); /* slightly reduce size when pressed */
+}
+
+
+
 
 #today {
     margin-left: 50px;
@@ -132,3 +182,4 @@ html, body {
         transform: translate(-50%, -50%) scale(1) rotate(45deg);
     }
 }
+
