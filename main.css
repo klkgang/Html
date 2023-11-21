@@ -54,7 +54,7 @@ html, body {
 #user::after {
     content: "";
     position: absolute;
-    right: 0px;
+    right: 40px;
     top: 30%;
     border-width: 5px;
     border-style: solid;
@@ -85,7 +85,7 @@ html, body {
         height: 100% !important;
     }
     #container #today, #container #done {
-        width: 100% !important;
+        width: 90% !important;
         margin: 10px !important;
     }
 }
@@ -94,18 +94,18 @@ html, body {
 #add {
     position: relative;
     bottom: 85px;
-    border: none; /* remove border */
-    border-radius: 50%; /* make the button round */
+    border: none; 
+    border-radius: 50%; 
     margin-left: 90%;
     width: 50px;
     height: 50px;
-    background-color: transparent;/* use main background color */
-    color: var(--menu-bg-color); /* use menu background color for text */
+    background-color: transparent;
+    color: var(--menu-bg-color); 
     text-align: center;
-    font-size: 30px; /* adjust as needed */
-    line-height: 50px; /* vertically center the '+' sign */
-    box-shadow: var(--box-shadow), 0 0 10px var(--box-shadow); /* add 3D effect */
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* smooth shadow and transform transition */
+    font-size: 30px;
+    line-height: 50px; 
+    box-shadow: var(--box-shadow), 0 0 10px var(--box-shadow); 
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
 }
 
 #add:before {
@@ -113,16 +113,13 @@ html, body {
 }
 
 #add:hover {
-    box-shadow: var(--box-shadow), 0 0 15px var(--box-shadow); /* increase 3D effect on hover */
+    box-shadow: var(--box-shadow), 0 0 15px var(--box-shadow); 
 }
 
 #add:active {
-    box-shadow: var(--box-shadow), 0 0 5px var(--box-shadow); /* decrease 3D effect when pressed */
-    transform: scale(0.95); /* slightly reduce size when pressed */
+    box-shadow: var(--box-shadow), 0 0 5px var(--box-shadow); 
+    transform: scale(0.95); 
 }
-
-
-
 
 #today {
     margin-left: 50px;
@@ -140,7 +137,7 @@ html, body {
     font-size: 30px;
     font-weight: bold;
     margin-top: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add a 3D effect */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
 }
 
 .checkbox {
@@ -151,11 +148,11 @@ html, body {
     background: #ffffff;
     border: 1px solid #D3D3D3;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.5s ease-in-out; /* Increase transition duration */
+    transition: box-shadow 0.5s ease-in-out; 
 }
 
 .checkbox:checked {
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Increase shadow for 3D effect */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); 
 }
 
 .checkbox:checked::before {
@@ -168,7 +165,7 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
-    animation: checkmark 1s ease-in-out forwards; /* Increase animation duration */
+    animation: checkmark 1s ease-in-out forwards; 
 }
 
 @keyframes checkmark {
@@ -182,4 +179,3 @@ html, body {
         transform: translate(-50%, -50%) scale(1) rotate(45deg);
     }
 }
-

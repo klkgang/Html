@@ -43,11 +43,16 @@ function printToDoList() {
         li.appendChild(document.createTextNode(today[i]));
         ul.appendChild(li);
     }
+
+    //code to add elements to the list
+
+    getElementById("add").addEventListener("click", function() {
+        
+    }
+
+
 } 
 
-//function addingToDo() {
-
-//}
 
 
 printToDoList();
