@@ -74,3 +74,7 @@ typeWriter1();
 typeWriter2();
 typeWriter3();
 console.log("It's working!");//random messaje in the console
+
+
+
+//logic for login

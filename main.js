@@ -1,3 +1,7 @@
+const today = [];
+const done = [];
+
+
 function checkTime() {
     var date = new Date(); 
     var hours = date.getHours();
@@ -16,44 +20,70 @@ function checkTime() {
     }
 }
 
+function addTask() {
+    var bottum = document.getElementById('add')
 
-var today = ["Clean the house", "Wash the dishes", "Do the laundry",];
-var done = [];
+    bottum.addEventListener('click', function() { 
+        var menu = document.getElementById('add_task')
+        menu.style.display = 'block'
+    });
 
+    var close = document.getElementById('cancel')
+    close.addEventListener('click', function() {
+        var menu = document.getElementById('add_task')
+        menu.style.display = 'none'
+    });
+    
+    var add = document.getElementById('add_task_button')
+    add.addEventListener('click', function() {
+        var taskInput = document.getElementById('task')
+        var task = taskInput.value
+        
+        if (task === '') {
+            alert("You must write something!");
+            return;
+        }
+        
+        var menu = document.getElementById('add_task')
+        menu.style.display = 'none'
+        today.push(task); 
+        printToDoList();
+    });
+}
+    
+//
+//print the to do list
 function printToDoList() {
-    var ul = document.getElementById("today");
-    var doneDiv = document.getElementById("done"); // Get the done div
-    for (var i = 0; i < today.length; i++) {
-        var li = document.createElement("li");
-        var checkbox = document.createElement("input");
+    const ul = document.getElementById("list");
+    while (ul.firstChild) {
+        ul.removeChild(ul.firstChild);
+    }
+    const doneDiv = document.getElementById("done");
+
+
+    for (let i = 0; i < today.length; i++) {
+        const li = document.createElement("li");
+        const checkbox = document.createElement("input");
         checkbox.type = "checkbox";
         checkbox.className = "checkbox";
         checkbox.addEventListener("change", function() {
             if (this.checked) {
-                var doneLi = document.createElement("li");
+                const doneLi = document.createElement("li");
                 doneLi.textContent = this.nextSibling.textContent;
                 doneLi.style.textDecoration = "line-through"; 
-                setTimeout(function() {
+                setTimeout(() => {
                     doneDiv.appendChild(doneLi); 
                     ul.removeChild(this.parentNode);
-                }.bind(this), 1000);
+                }, 1000);
             }
         });
         li.appendChild(checkbox);
         li.appendChild(document.createTextNode(today[i]));
         ul.appendChild(li);
     }
-
-    //code to add elements to the list
-
-    getElementById("add").addEventListener("click", function() {
-        
-    }
-
-
-} 
+}
 
 
 
-printToDoList();
 checkTime();
+addTask();
